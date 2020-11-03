@@ -1,0 +1,30 @@
+# zorluk derecesi HARD
+#Security ( verilen kelime içerisindeki her bir harf bir katı temsil edip (M kasayı) (T hırsızı) (G güvenliği) temsil edecek şekilde. )
+# Eğer hırsız ile kasa arasında güvenlik varsa çıktı 'quiet' yoksa 'alarm' versin
+
+
+
+sese('xGxTxxxgx$xxGxx')
+
+
+def sese(str2):
+  B='x'
+  strol=[]
+  str=""
+  for j in str2:
+    if(j!=B):
+      strol.append(j)
+    else:
+      continue
+  for i in strol:
+    str+=i
+  #print(txt.rfind("q"))
+  #print(txt.rindex("q"))
+  str.rfind('T')
+  str.rfind('$')
+  t=str.rindex('T')
+  m=str.rindex('$')
+  if(abs(t-m)==1):
+    print('alarm')
+  else:
+    print('quiet')
