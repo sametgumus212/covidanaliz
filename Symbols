@@ -1,0 +1,23 @@
+#Symbols ( verilen cümle içerisindeki sembolleri temizleyip çıktı üretme)
+
+func("H&i ######Jenn$$$ifer@@@ 42")
+
+
+def func(str):
+  st=""
+  liste=list()
+  sym=['@','#','$','*','%','&',]
+  str2=str.split()
+  for i in str2:
+    liste.append(i)
+  
+  for j in sym:
+    #for k in liste:
+     # print(j)
+      liste=([k.replace(j,'') for k in liste])
+     # print(k)
+  
+  #print(liste)
+  for m in liste:
+    st+=m+' '
+  print(st)
