@@ -1,0 +1,22 @@
+#Dejavu (kelime içerisinde tekrar eden harfler var ise çıktı olarak dejavu yoksa unique olarak gösterilmesi)
+
+dej("asdfg")
+
+def dej(str):
+  a=len(str)
+  x=0
+  y=0
+
+  for i in range(0,a-1,1):
+   
+    for j in range(i+1,a,1):
+      if str[i]==str[j]:
+        x=1
+        
+      else:
+        y=1 
+  if x and y==True:
+    print("Deja Vu")
+  else:
+    print("Unique")
+   
