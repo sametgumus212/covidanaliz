@@ -1,0 +1,38 @@
+#The Spy  Life (ters verilen cümle içerisinden harf dışındakileri temizleyip ortaya çıkarma)
+
+
+import string
+import re
+decr("012d=l%%r12o?w %23olle^3H")
+
+
+
+def decr(str):
+  str2=str[::-1]
+  m=""
+  n=""
+  k=""
+  str2=str.split(' ')
+  #str2.reverse()
+  for i in str2 :
+   # print(chr(c))
+    for  j in i:
+      for  c in range(65,123 ):
+        if c in range(92,97):
+          continue
+        else:
+          if (j==chr(c) ):
+            m+=j
+            print(m)
+
+          else:
+          # print(i)
+            continue
+    m+=' '      
+       
+  n=m
+  print(n)
+  n=n[::-1]
+  print(n)
+  k=n    
+  print(k)
