@@ -1,0 +1,15 @@
+# pig Platin (input olarak gelen cümledeki her bir kelimenin başındaki harfi alıp kelimenin sonuna ekleyip ardından "ay" kelimesini bu kelimenin sonuna ekleme)
+
+
+hay("lets go home bro")
+
+def hay(str):
+  a=""
+  j=""
+  m=""
+  str2=str.split()
+  for i in str2: 
+    a=i[0]
+    j=i[1:]+a+"ay"
+    m+=j+' '
+  print(m)
