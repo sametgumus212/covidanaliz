@@ -1,0 +1,28 @@
+#Average Word Length (input olarak gelen cümledeki harf sayısının cümledeki kelime sayısına oranını yani ortalamasını bulma Not: küsüratları üst sayıya yuvarla)
+
+import numpy as np
+averaj("can you not do that?")
+
+
+
+def averaj(str):
+  
+  str2=str.split(' ')
+  sum=0
+  say=1
+  c=len(str2)
+  for i in str2:
+   # i=([k.replace('?','') for k in i])
+    print(i)
+    for j in i:
+      if(j=='?'):
+        continue
+      else:
+        sum+=say
+      #say+=1
+
+  print(sum)
+  print(c)
+  print(int(np.ceil(sum/c)))
+  
+  
